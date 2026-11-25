@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Area de trabalho da plataforma INFLUmarket." />
+    <title>INFLUmarket | Area de Trabalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">IF</div>
+          <div>
+            <strong>INFLUmarket</strong>
+            <span>Area de trabalho</span>
+          </div>
+        </div>
+
+        <nav class="workspace-nav" aria-label="Areas principais">
+          <button class="workspace-tab active" data-tab="cadastro">
+            <span class="nav-icon">01</span>
+            <span>Cadastro</span>
+          </button>
+          <button class="workspace-tab" data-tab="qrbonus">
+            <span class="nav-icon">02</span>
+            <span>Criação do QRBONUS</span>
+          </button>
+          <button class="workspace-tab" data-tab="controle">
+            <span class="nav-icon">03</span>
+            <span>Painel de Controle</span>
+          </button>
+          <button class="workspace-tab" data-tab="matchmaking">
+            <span class="nav-icon">04</span>
+            <span>Área de Matchmaking</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-profile">
+          <div class="avatar">GB</div>
+          <div>
+            <strong>Gabriel Brand</strong>
+            <span>Administrador</span>
+          </div>
+          <button class="more-button" aria-label="Mais opções">•••</button>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div>
+            <p class="breadcrumb">INFLUmarket / <span id="breadcrumbArea">Cadastro</span></p>
+            <h1 id="pageTitle">Cadastro</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" aria-label="Notificações">🔔</button>
+            <button class="primary-btn" id="topAction">Novo cadastro</button>
+            <a class="outline-btn logout-btn" href="../index.html?login=1#contato">Sair</a>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="tab-panel active" id="cadastro">
+            <div class="subtabs" role="tablist" aria-label="Tipos de cadastro">
+              <button class="subtab active" data-subtab="cad-anunciantes">Anunciantes</button>
+              <button class="subtab" data-subtab="cad-influencers">Influencers</button>
+              <button class="subtab" data-subtab="cad-freelancers">Freelancers</button>
+            </div>
+
+            <div class="subpanel active" id="cad-anunciantes">
+              <div class="section-header">
+                <div>
+                  <span class="eyebrow">Base empresarial</span>
+                  <h2>Cadastro de anunciantes</h2>
+                </div>
+                <label class="search-box"><span>⌕</span><input type="search" placeholder="Buscar anunciante" /></label>
+              </div>
+              <div class="table-card">
+                <div class="table-toolbar">
+                  <strong>128 anunciantes cadastrados</strong>
+                  <button class="outline-btn">Exportar</button>
+                </div>
+                <div class="table-wrap">
+                  <table>
+                    <thead><tr><th>Anunciante</th><th>Categoria</th><th>Campanhas</th><th>Status</th><th></th></tr></thead>
+                    <tbody>
+                      <tr><td><div class="person"><span class="company-logo violet">NV</span><div><strong>Nova Vita</strong><small>contato@novavita.com</small></div></div></td><td>Beleza</td><td>12</td><td><span class="status active-status">Ativo</span></td><td><button class="row-action">•••</button></td></tr>
+                      <tr><td><div class="person"><span class="company-logo green">RF</span><div><strong>Raiz Fit</strong><small>marketing@raizfit.com</small></div></div></td><td>Esporte</td><td>8</td><td><span class="status active-status">Ativo</span></td><td><button class="row-action">•••</button></td></tr>
+                      <tr><td><div class="person"><span class="company-logo blue">ML</span><div><strong>Modo Lar</strong><small>campanhas@modolar.com</small></div></div></td><td>Casa</td><td>5</td><td><span class="status review-status">Análise</span></td><td><button class="row-action">•••</button></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="subpanel" id="cad-influencers">
+              <div class="section-header"><div><span class="eyebrow">Rede de criadores</span><h2>Cadastro de influencers</h2></div><button class="outline-btn">Adicionar influencer</button></div>
+              <div class="profile-grid">
+                <article class="profile-card"><div class="profile-top"><span class="profile-avatar coral">AM</span><span class="status active-status">Verificado</span></div><h3>Amanda Moraes</h3><p>Moda e Lifestyle · 284 mil seguidores</p><div class="profile-kpis"><span><strong>12</strong><small>Campanhas</small></span><span><strong>8.9%</strong><small>Engajamento</small></span></div></article>
+                <article class="profile-card"><div class="profile-top"><span class="profile-avatar cyan">LC</span><span class="status active-status">Verificado</span></div><h3>Lucas Cardoso</h3><p>Fitness · 191 mil seguidores</p><div class="profile-kpis"><span><strong>9</strong><small>Campanhas</small></span><span><strong>10.4%</strong><small>Engajamento</small></span></div></article>
+              </div>
+            </div>
+
+            <div class="subpanel" id="cad-freelancers">
+              <div class="section-header"><div><span class="eyebrow">Equipe especializada</span><h2>Cadastro de freelancers</h2></div><button class="outline-btn">Convidar profissional</button></div>
+              <div class="profile-grid">
+                <article class="profile-card"><div class="profile-top"><span class="profile-avatar gold">RS</span><span class="status active-status">Disponível</span></div><h3>Rafaela Souza</h3><p>Editora de vídeo · Premiere / CapCut</p><div class="profile-kpis"><span><strong>34</strong><small>Projetos</small></span><span><strong>4.9</strong><small>Avaliação</small></span></div></article>
+                <article class="profile-card"><div class="profile-top"><span class="profile-avatar violet2">MP</span><span class="status review-status">Em projeto</span></div><h3>Marcos Porto</h3><p>Diretor audiovisual · Motion</p><div class="profile-kpis"><span><strong>21</strong><small>Projetos</small></span><span><strong>4.8</strong><small>Avaliação</small></span></div></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="qrbonus">
+            <div class="subtabs">
+              <button class="subtab active" data-subtab="qr-criacao">Criação de vídeo</button>
+              <button class="subtab" data-subtab="qr-galeria">Galeria ativa e inativa</button>
+              <button class="subtab" data-subtab="qr-operacional">Formulário operacional</button>
+            </div>
+
+            <div class="subpanel active" id="qr-criacao">
+              <div class="section-header"><div><span class="eyebrow">Studio QRBONUS</span><h2>Criação de vídeo</h2></div><button class="primary-btn">Gerar campanha</button></div>
+              <div class="creation-layout">
+                <form class="creator-form">
+                  <label>Nome da campanha<input type="text" value="Lançamento Verão 2026" /></label>
+                  <label>Produto<input type="text" value="Coleção Essentials" /></label>
+                  <label>Formato<select><option>Vídeo vertical · 9:16</option><option>Vídeo quadrado · 1:1</option></select></label>
+                  <label>Mensagem principal<textarea rows="4">Descubra o novo essencial da temporada.</textarea></label>
+                  <button type="button" class="outline-btn full-width">Adicionar mídia</button>
+                </form>
+                <div class="video-preview">
+                  <div class="phone-preview"><div class="preview-screen"><span class="preview-tag">Lançamento</span><strong>Essentials</strong><small>Desconto exclusivo dentro do vídeo</small><button>Ver oferta</button></div></div>
+                  <div class="preview-tools"><span>Preview ativo</span><strong>00:15</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="subpanel" id="qr-galeria">
+              <div class="section-header"><div><span class="eyebrow">Biblioteca</span><h2>QRBONUS ativos e inativos</h2></div><button class="outline-btn">Filtrar</button></div>
+              <div class="campaign-grid">
+                <article class="campaign-card"><div class="campaign-cover summer"><span>Ativo</span></div><div class="campaign-info"><h3>Summer Drop</h3><p>1.284 visualizações · R$ 18.4k</p></div></article>
+                <article class="campaign-card"><div class="campaign-cover glow"><span>Ativo</span></div><div class="campaign-info"><h3>Glow Skin</h3><p>842 visualizações · R$ 9.1k</p></div></article>
+                <article class="campaign-card inactive"><div class="campaign-cover run"><span>Inativo</span></div><div class="campaign-info"><h3>Run Pro</h3><p>391 visualizações · R$ 2.9k</p></div></article>
+              </div>
+            </div>
+
+            <div class="subpanel" id="qr-operacional">
+              <div class="section-header"><div><span class="eyebrow">Operação anunciante</span><h2>Formulário operacional</h2></div></div>
+              <div class="operational-layout">
+                <div class="data-list">
+                  <div class="mini-panel-header"><h3>Lista de dados</h3><button class="text-btn">Adicionar</button></div>
+                  <div class="data-row"><span>Produtos enviados</span><strong>24</strong></div>
+                  <div class="data-row"><span>Materiais aprovados</span><strong>18</strong></div>
+                  <div class="data-row"><span>Revisões pendentes</span><strong>6</strong></div>
+                </div>
+                <div class="data-list">
+                  <div class="mini-panel-header"><h3>Lista de influencers</h3><button class="text-btn">Convidar</button></div>
+                  <div class="data-row"><div class="person"><span class="profile-avatar coral mini">AM</span><strong>Amanda Moraes</strong></div><span class="status active-status">Confirmada</span></div>
+                  <div class="data-row"><div class="person"><span class="profile-avatar cyan mini">LC</span><strong>Lucas Cardoso</strong></div><span class="status review-status">Pendente</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="controle">
+            <div class="subtabs">
+              <button class="subtab active" data-subtab="painel-anunciante">Anunciantes</button>
+              <button class="subtab" data-subtab="painel-influencer">Influencers</button>
+              <button class="subtab" data-subtab="painel-freelancer">Freelancers</button>
+            </div>
+
+            <div class="subpanel active" id="painel-anunciante">
+              <div class="section-header"><div><span class="eyebrow">Visão geral do anunciante</span><h2>Telemetria e finanças</h2></div><button class="outline-btn">Últimos 30 dias⌄</button></div>
+              <div class="kpi-grid"><article><span>Faturamento</span><strong>R$ 184.280</strong><small class="positive">+22,4%</small></article><article><span>Conversões</span><strong>1.284</strong><small class="positive">+18,1%</small></article><article><span>Ticket médio</span><strong>R$ 143,50</strong><small class="positive">+8,7%</small></article><article><span>ROI</span><strong>4,8x</strong><small class="positive">+0,6x</small></article></div>
+              <div class="dashboard-grid"><article class="chart-card"><div class="mini-panel-header"><h3>Performance</h3><span>Maio · Jun · Jul · Ago · Set · Out</span></div><div class="line-chart"><div class="chart-gridline l1"></div><div class="chart-gridline l2"></div><div class="chart-gridline l3"></div><svg viewBox="0 0 700 220" preserveAspectRatio="none"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fe7d1" stop-opacity=".35"/><stop offset="1" stop-color="#6fe7d1" stop-opacity="0"/></linearGradient></defs><path d="M0 180 C80 160 120 130 180 145 S280 70 350 100 S450 125 520 55 S630 70 700 25 L700 220 L0 220 Z" fill="url(#area)"/><path d="M0 180 C80 160 120 130 180 145 S280 70 350 100 S450 125 520 55 S630 70 700 25" fill="none" stroke="#6fe7d1" stroke-width="5"/></svg></div></article><article class="ranking-card"><div class="mini-panel-header"><h3>Top influenciadores</h3><button class="text-btn">Ver todos</button></div><div class="ranking-row"><span class="rank">1</span><span class="profile-avatar coral mini">AM</span><strong>Amanda M.</strong><small>R$ 42,8k</small></div><div class="ranking-row"><span class="rank">2</span><span class="profile-avatar cyan mini">LC</span><strong>Lucas C.</strong><small>R$ 31,2k</small></div><div class="ranking-row"><span class="rank">3</span><span class="profile-avatar gold mini">JP</span><strong>Julia P.</strong><small>R$ 24,6k</small></div></article></div>
+            </div>
+
+            <div class="subpanel" id="painel-influencer">
+              <div class="section-header"><div><span class="eyebrow">Área financeira</span><h2>Painel do influencer</h2></div><button class="primary-btn">Solicitar saque</button></div>
+              <div class="kpi-grid"><article><span>Saldo disponível</span><strong>R$ 42.810</strong><small>Próximo repasse em 5 dias</small></article><article><span>Comissões</span><strong>R$ 18.420</strong><small class="positive">+14,2%</small></article><article><span>Campanhas</span><strong>12</strong><small>4 finalizam em breve</small></article><article><span>Engajamento</span><strong>8.9%</strong><small class="positive">+1,3 p.p.</small></article></div>
+              <div class="table-card"><div class="table-toolbar"><strong>Movimentações</strong><button class="outline-btn">Extrato</button></div><div class="table-wrap"><table><thead><tr><th>Campanha</th><th>Tipo</th><th>Data</th><th>Valor</th><th>Status</th></tr></thead><tbody><tr><td>Summer Drop</td><td>Comissão</td><td>12/10/2026</td><td>R$ 8.420</td><td><span class="status active-status">Pago</span></td></tr><tr><td>Glow Skin</td><td>Comissão</td><td>08/10/2026</td><td>R$ 4.280</td><td><span class="status active-status">Pago</span></td></tr></tbody></table></div></div>
+            </div>
+
+            <div class="subpanel" id="painel-freelancer">
+              <div class="section-header"><div><span class="eyebrow">Área financeira</span><h2>Painel do freelancer</h2></div><button class="primary-btn">Solicitar pagamento</button></div>
+              <div class="kpi-grid"><article><span>A receber</span><strong>R$ 12.740</strong><small>3 projetos ativos</small></article><article><span>Recebido no mês</span><strong>R$ 8.920</strong><small class="positive">+9,8%</small></article><article><span>Projetos</span><strong>34</strong><small>6 aguardando aprovação</small></article><article><span>Avaliação</span><strong>4.9</strong><small>Excelente</small></article></div>
+            </div>
+          </section>
+
+          <section class="tab-panel" id="matchmaking">
+            <div class="subtabs"><button class="subtab active" data-subtab="match-anunciantes">Anunciantes</button><button class="subtab" data-subtab="match-influencers">Influencers</button></div>
+            <div class="subpanel active" id="match-anunciantes">
+              <div class="section-header"><div><span class="eyebrow">Conexões estratégicas</span><h2>Anunciantes compatíveis</h2></div><button class="outline-btn">Refinar busca</button></div>
+              <div class="match-grid"><article class="match-card"><span class="match-score">96%</span><span class="company-logo violet">NV</span><h3>Nova Vita</h3><p>Beleza · Público-alvo semelhante</p><button class="outline-btn full-width">Ver proposta</button></article><article class="match-card"><span class="match-score">91%</span><span class="company-logo green">RF</span><h3>Raiz Fit</h3><p>Fitness · Alta conversão</p><button class="outline-btn full-width">Ver proposta</button></article></div>
+            </div>
+            <div class="subpanel" id="match-influencers">
+              <div class="section-header"><div><span class="eyebrow">Conexões estratégicas</span><h2>Influencers compatíveis</h2></div><button class="outline-btn">Refinar busca</button></div>
+              <div class="match-grid"><article class="match-card"><span class="match-score">98%</span><span class="profile-avatar coral">AM</span><h3>Amanda Moraes</h3><p>Moda · 284 mil seguidores</p><button class="outline-btn full-width">Enviar convite</button></article><article class="match-card"><span class="match-score">94%</span><span class="profile-avatar cyan">LC</span><h3>Lucas Cardoso</h3><p>Fitness · 191 mil seguidores</p><button class="outline-btn full-width">Enviar convite</button></article></div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
